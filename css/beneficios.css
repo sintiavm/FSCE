@@ -1,0 +1,176 @@
+div#menu-lateral {
+    position: relative;
+    max-width: 280px;  
+    padding-top: 2.5em;
+  }
+  
+  li.menu-item {
+    background-color: grey;
+  }
+  
+  
+  li.menu-item i.iconMenu {
+    color: #fff;
+  }
+  
+  li.menu-item:hover, li.menu-item:focus-within {
+    background-color: white;
+  }
+  li.menu-item:hover i.iconMenu, li.menu-item:focus-within i.iconMenu {
+    color: grey;
+  }
+  ul#menu-menu-lateral li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  ul#menu-menu-lateral li a {
+    font-size: 1.2em;
+    color: #fff;
+    height: 100%;
+    width: 100%;  
+  }
+  
+  ul#menu-menu-lateral li:hover, ul#menu-menu-lateral li:focus-within{
+    background-color: #fff;
+  }
+  
+  ul#menu-menu-lateral li:hover >a, ul#menu-menu-lateral li:focus-within>a{
+    color: #666;
+  }
+  
+  #menu-lateral ul.menu .sub-menu {
+    display: none;
+  }
+  
+  
+  #menu-lateral ul.menu li:hover > .sub-menu, #menu-lateral ul.menu li:focus-within > .sub-menu {    
+      display: inline-table;
+      position: relative;
+      width: 100%;
+  }
+  
+  
+  ul#menu-menu-lateral li >.sub-menu li > a{
+    font-size: 1em;
+    color: grey;
+  }
+  
+  ul#menu-menu-lateral li >.sub-menu li{
+    background-color: #fff;  
+  }
+  
+  ul#menu-menu-lateral li >.sub-menu li:hover, ul#menu-menu-lateral li >.sub-menu li:focus-within{
+    background-color: grey;
+  }
+  
+  ul#menu-menu-lateral li >.sub-menu li:hover > a, ul#menu-menu-lateral li >.sub-menu li:focus-within > a{
+    color: #fff;
+  }
+  
+  ul#menu-menu-lateral li >.sub-menu li:last-child{
+    border-bottom: none;
+  }
+  
+  ul#menu-menu-lateral li.hover i.right.iconMenu {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color:grey;
+  }
+  
+  
+  i.iconMenu {
+    color: grey;
+  }
+  
+  
+  
+  /*-------- RESPONSIVO ---------*/
+  /*medium screen*/
+      @media (max-width: 992px) {
+            div#menu-lateral {
+              position: absolute;
+              left: 0px;
+              margin-bottom: 15px;
+              bottom: 0;
+              top: 0;
+          margin-top: 8.5em;
+            }
+  
+            ul#menu-menu-lateral li.menu-item a {
+              font-size: 0.9em;
+          line-height: 22px;
+            }
+  
+  
+            ul#menu-menu-lateral li >.sub-menu li > a {
+              padding-left: 10px;
+            }
+  
+           
+        ul#menu-menu-lateral li >.sub-menu li {
+          padding: 5px;        
+          width: 245px;        
+        }
+        
+        #menu-lateral ul.menu li:hover > .sub-menu, #menu-lateral ul.menu li:focus-within > .sub-menu {
+      display: inline-table;
+      position: absolute;
+      left: 14.5em;
+      width: 100%;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+      0 3px 1px -2px rgba(0,0,0,0.12), 
+      0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+  
+      }
+  
+    @media (max-width: 600px) {
+      
+      ul#menu-menu-lateral li {
+          height: 55px;
+          width: 55px;
+            }
+      
+      li.menu-item {
+      background-color: grey;
+  }
+      
+      li.menu-item i.iconMenu {
+      color: #fff;
+  }
+      li.menu-item:hover i.iconMenu, li.menu-item:focus-within i.iconMenu {
+      color: grey;
+  }
+      
+      ul#menu-menu-lateral li.menu-item a{
+              visibility: hidden;
+          font-size: 1.2em;
+          display: flex;
+            }
+      i.left.iconMenu {
+          font-size: 2.2em;
+          left: 2px;
+          visibility: visible;
+      }
+      
+      i.right.iconMenu{
+        display: none;
+      }
+     
+  
+          ul#menu-menu-lateral li:hover, ul#menu-menu-lateral li:focus-within {
+              background-color: #fff;
+      width: 225px;
+          }
+      
+      ul#menu-menu-lateral li:hover>a, ul#menu-menu-lateral li:focus-within>a {
+          visibility: visible;
+          line-height: 45px;
+      }
+              
+        #menu-lateral ul.menu li:hover > .sub-menu, #menu-lateral ul.menu li:focus-within > .sub-menu {
+          display:none;
+      }    
+   }

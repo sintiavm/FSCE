@@ -41,28 +41,11 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/mision.css">
+		<link rel="stylesheet" href="css/mision.css">
 		
     </head>
     <body>
 	
-		<!-- Preloader -->
-       <!---- <div class="preloader">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
-
-                <div class="indicator"> 
-                    <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    </svg>
-                </div>
-            </div>
-        </div> -->
-        <!-- End Preloader -->
-
-		
 		<!-- Get Pro Button -->
 		<ul class="pro-features">
 			<a class="get-pro" href="https://api.whatsapp.com/send?phone=+51987958344&text=Hola!%20Me%20gustaría%20hablar%20con%20un%20asesor%20por%20favor%20">WhatsApp</a>
@@ -116,7 +99,7 @@
 													<li><a href="mision.html">Misión</a></li>
 													<li><a href="organigrama.html">Organización</a></li>
 													<li><a href="">Noticias</a></li>
-												</ul>
+											</ul>
 											</li>
 											<li><a href="beneficios.html">Beneficios </a></li>
 											<li><a href="transparencia.html">Transparencia </a></li>
@@ -138,33 +121,107 @@
 		</header>
 		<!-- End Header Area -->
 		
-        <section class="about-section">
-            <div class="container">
-                <div class="row">                
-                    <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
-                        <div class="inner-column">
-                            <div class="sec-title">
-                                <span class="title">Departamento de Fondos de Seguro de Cesación del Ejército</span>
-                                <h2>Misión</h2>
-                            </div>
-                            <div class="text">Contribuir al Bienestar del Personal del Ejército, mediante el otorgamiento de los beneficios del Fondo de Seguro de Cesación, así como la prestación de servicios financieros de calidad y en las mejores condiciones del mercado promedio. </div>
-                            <div class="btn-box">
-                                <a href="#" class="theme-btn btn-style-one">Contactános</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Image Column -->
-                    <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="inner-column wow fadeInLeft">
-                            <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="img/slider1.jpg" alt=""></a></figure>
-                            <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="img/escudosinfondo.png" alt=""></a></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        		<!-- Footer Area -->
+		
+<!-- Start Contact Us -->
+<section class="contact-us section">
+	<div class="container">
+		<div class="inner">
+			<div class="row"> 
+				<div class="col-lg-6">
+					<div class="contact-us-left">
+						<!--Start Google-map -->
+						<div id="myMap"><iframe src="https://www.google.com/maps/d/embed?mid=1UF4Nb_yzmq7dyuBi9Q3NUYV38e9sU9Fc&ehbc=2E312F" width="640" height="480"></iframe></div>
+						<!--/End Google-map -->
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="contact-us-form">
+						<h2>Contáctanos</h2>
+						<p>Si tienes alguna pregunta, escríbenos .</p>
+						<!-- Form -->
+						<form class="form" method="post" action="mail/mail.php">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Nombre" required="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="email" name="email" placeholder="Email" required="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="text" name="phone" placeholder="Celular">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input type="text" name="subject" placeholder="Curso" required="">
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Tu mensaje" required=""></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group login-btn">
+										<button class="btn" type="submit">Enviar</button>
+								</div>
+							</div>
+						</form>
+						<!--/ End Form -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-info">
+			<div class="row">
+				<!-- single-info -->
+				<div class="col-lg-4 col-12 ">
+					<div class="single-info">
+						<i class="icofont icofont-ui-call"></i>
+						<div class="content">
+							<h3>+51987958344</h3>
+							<p>fsce@ejercitodelperu.pe</p>
+						</div>
+					</div>
+				</div>
+				<!--/End single-info -->
+				<!-- single-info -->
+				<div class="col-lg-4 col-12 ">
+					<div class="single-info">
+						<i class="icofont-google-map"></i>
+						<div class="content">
+							<h3>FSCE</h3>
+							<p>Av. Paseo del Bosque S/N - San Borja, Lima</p>
+						</div>
+					</div>
+				</div>
+				<!--/End single-info -->
+				<!-- single-info -->
+				<div class="col-lg-4 col-12 ">
+					<div class="single-info">
+						<i class="icofont icofont-wall-clock"></i>
+						<div class="content">
+							<h3>Lun - Vie: 8:00 am - 12:00 pm</h3>
+							<p>Sab 9:00 am - 12:00 pm</p>
+							</div>
+					</div>
+				</div>
+				<!--/End single-info -->
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Contact Us -->
+		<!-- End Appointment -->
+
+		<!-- /End Newsletter Area -->
+		
+		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
 			<!-- Footer Top -->
 			<div class="footer-top">
